@@ -1,6 +1,10 @@
 <template>
+<v-app>
+    <v-container>
   <div class="skills">
   </div>
+  </v-container>
+  </v-app>
 </template>
 
 <script>
