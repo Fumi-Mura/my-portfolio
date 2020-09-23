@@ -22,7 +22,7 @@ export default {
   .nav {
     opacity: 0.7;
     height: 70px;
-    position: absolute;
+    position: fixed;
     bottom: 50px;
     left: 50%;
     transform: translate(-50%, 50%);

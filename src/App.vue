@@ -1,13 +1,15 @@
 <template>
-  <div id="app">
-    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <Header msg="Welcome to Your Vue.js App"/>
-    <About></About>
-    <Skills></Skills>
-    <Works></Works>
-    <Contact></Contact>
-    <Footer></Footer>
-  </div>
+  <v-app>
+    <div id="app">
+      <!-- <img alt="header" src="./assets/laptop.jpg"> -->
+      <Header></Header>
+      <About></About>
+      <Skills></Skills>
+      <Works></Works>
+      <Contact></Contact>
+      <Footer></Footer>
+    </div>
+  </v-app>
 </template>
 
 <script>
@@ -32,11 +34,5 @@ export default {
 </script>
 
 <style lang="scss">
-#app {
-  // width: 100vw;
-  // height: 100vh;
-  // position: relative;
-}
-
-@import "./css/reset.scss";
+  @import "./css/reset.scss";
 </style>
