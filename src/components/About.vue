@@ -10,7 +10,7 @@
       <v-layout justify-space-around raw wrap class="mb-10">
         <img data-aos="fade-right" data-aos-anchor-placement="bottom-bottom" :src="myImage" alt="自己紹介用の写真" class="myImage">
         <table data-aos="fade-left" data-aos-anchor-placement="bottom-bottom" class="mt-10">
-          <tbody v-for="item in items" v-bind:key="item.id" >
+          <tbody v-for="item in items" :key="item" >
             <tr style="display: block" class="pb-10">
               <th class="pr-10">{{ item.title }}</th>
               <td>{{ item.content }}</td>
