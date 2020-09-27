@@ -80,8 +80,6 @@ import { functions } from "@/plugins/firebase";
 import Footer from "@/components/Footer.vue";
 
 export default {
-  name: "Contact",
-  props: {},
   components: {
     Footer,
   },
