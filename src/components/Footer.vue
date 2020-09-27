@@ -1,6 +1,6 @@
 <template>
   <v-footer dark padless>
-    <Nav></Nav>
+    <!-- <Nav></Nav> -->
     <v-card class="flex" flat tile>
       <v-card-title class="blue-grey darken-2">
         <strong class="subheading"> Thank you for watching this site ! </strong>
@@ -19,16 +19,16 @@
 </template>
 
 <script>
-import Nav from "./Nav.vue";
+// import Nav from "./Nav.vue";
 
 export default {
   name: "Footer",
   props: {
     msg: String,
   },
-  components: {
-    Nav,
-  },
+  // components: {
+  //   Nav,
+  // },
   data() {
     return {
       icons: [
