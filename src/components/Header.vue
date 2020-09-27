@@ -6,8 +6,8 @@
           <div class="header__text__typer">
             <vue-typer
               text="Thank you for visitting my portfolio"
-              repeat="0"
-              type-delay="90"
+              :repeat="0"
+              :type-delay="90"
             ></vue-typer
             ><br />
           </div>
@@ -20,7 +20,7 @@
             <p class="header__text__job">web engineer</p>
             <span class="header__text__line"></span>
             <div class="header__text__scroll">
-              <v-btn color="white" outlined class="">
+              <v-btn color="white" outlined>
                 <font-awesome-icon
                   :icon="['fas', 'angle-down']"
                   class="mr-4"
@@ -40,8 +40,6 @@
 import { VueTyper } from "vue-typer";
 
 export default {
-  name: "Header",
-  props: {},
   components: {
     VueTyper,
   },
@@ -50,7 +48,6 @@ export default {
 
 <style scoped lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap");
-
 .header {
   background: radial-gradient(#517fa4, #001320);
   height: 100vh;

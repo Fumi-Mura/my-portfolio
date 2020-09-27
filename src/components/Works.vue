@@ -1,75 +1,75 @@
 <template>
-  <v-container>
-    <v-layout justify-center class="mb-10">
-      <h2
-        data-aos="fade-up"
-        data-aos-anchor-placement="bottom-bottom"
-        class="sub__title"
-      >
-        <v-icon large class="mr-5">mdi-hammer</v-icon>
-        <span>{{ works }}</span>
-      </h2>
-    </v-layout>
-    <v-layout justify-space-around raw wrap class="mb-10">
-      <v-flex
-        data-aos="fade"
-        data-aos-delay="200"
-        mb-10
-        ml-5
-        mr-5
-        v-for="item in items"
-        :key="item"
-      >
-        <v-hover v-slot:default="{ hover }">
-          <v-card class="mx-auto" color="grey lighten-4" width="500">
-            <v-img :aspect-ratio="16 / 9" :src="item.image">
-              <v-expand-transition>
-                <div
-                  v-if="hover"
-                  class="d-flex transition-fast-in-fast-out black darken-2 v-card--reveal display-3 white--text"
-                  style="height: 100%"
+  <v-app>
+    <v-container>
+      <v-layout justify-center class="mb-10">
+        <h2
+          data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom"
+          class="sub__title"
+        >
+          <v-icon large class="mr-5">mdi-hammer</v-icon>
+          <span>{{ works }}</span>
+        </h2>
+      </v-layout>
+      <v-layout justify-space-around raw wrap class="mb-10">
+        <v-flex
+          data-aos="fade"
+          data-aos-delay="200"
+          mb-10
+          ml-5
+          mr-5
+          v-for="item in items"
+          :key="item.id"
+        >
+          <v-hover v-slot:default="{ hover }">
+            <v-card class="mx-auto" color="grey lighten-4" width="500">
+              <v-img :aspect-ratio="16 / 9" :src="item.image">
+                <v-expand-transition>
+                  <div
+                    v-if="hover"
+                    class="d-flex transition-fast-in-fast-out black darken-2 v-card--reveal display-3 white--text"
+                    style="height: 100%"
+                  >
+                    <p class="hoverDescription">{{ item.hoverDescription }}</p>
+                  </div>
+                </v-expand-transition>
+              </v-img>
+              <v-card-text style="position: relative">
+                <v-btn
+                  absolute
+                  color="orange"
+                  class="white--text"
+                  fab
+                  right
+                  top
+                  large
+                  :href="item.github"
                 >
-                  <p class="hoverDescription">{{ item.hoverDescription }}</p>
+                  <font-awesome-icon
+                    :icon="['fab', 'github']"
+                    style="font-size: 40px"
+                  />
+                </v-btn>
+                <div class="font-weight-light grey--text title mb-2">
+                  {{ item.useTech }}
                 </div>
-              </v-expand-transition>
-            </v-img>
-            <v-card-text style="position: relative">
-              <v-btn
-                absolute
-                color="orange"
-                class="white--text"
-                fab
-                right
-                top
-                large
-                :href="item.github"
-              >
-                <font-awesome-icon
-                  :icon="['fab', 'github']"
-                  style="font-size: 40px"
-                />
-              </v-btn>
-              <div class="font-weight-light grey--text title mb-2">
-                {{ item.useTech }}
-              </div>
-              <h3 class="display-1 font-weight-light orange--text mb-2">
-                {{ item.title }}
-              </h3>
-              <a class="font-weight-light title mb-2" :href="item.url">
-                {{ item.url }}<br />
-              </a>
-            </v-card-text>
-          </v-card>
-        </v-hover>
-      </v-flex>
-    </v-layout>
-  </v-container>
+                <h3 class="display-1 font-weight-light orange--text mb-2">
+                  {{ item.title }}
+                </h3>
+                <a class="font-weight-light title mb-2" :href="item.url">
+                  {{ item.url }}<br />
+                </a>
+              </v-card-text>
+            </v-card>
+          </v-hover>
+        </v-flex>
+      </v-layout>
+    </v-container>
+  </v-app>
 </template>
 
 <script>
 export default {
-  name: "Works",
-  props: {},
   data() {
     return {
       works: "works",

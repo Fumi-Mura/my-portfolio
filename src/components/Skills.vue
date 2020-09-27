@@ -36,7 +36,7 @@
           data-aos="fade"
           data-aos-delay="200"
           v-for="framework in frameworks"
-          :key="framework"
+          :key="framework.id"
           class="center"
         >
           <font-awesome-icon
@@ -54,7 +54,7 @@
           data-aos="fade"
           data-aos-delay="200"
           v-for="other in others"
-          :key="other"
+          :key="other.id"
           class="center"
         >
           <font-awesome-icon
@@ -71,8 +71,6 @@
 
 <script>
 export default {
-  name: "Skills",
-  props: {},
   data() {
     return {
       skills: "skills",

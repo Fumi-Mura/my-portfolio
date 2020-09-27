@@ -20,8 +20,6 @@
 
 <script>
 export default {
-  // name: "Nav",
-  props: {},
   data() {
     return {
       activeBtn: 1,

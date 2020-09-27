@@ -65,10 +65,6 @@
 
 <script>
 export default {
-  name: "About",
-  props: {
-    data: {},
-  },
   data() {
     return {
       aboutMe: "About me",
