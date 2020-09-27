@@ -4,28 +4,36 @@
       <h2
         data-aos="fade-up"
         data-aos-anchor-placement="bottom-bottom"
-        style="font-size: 4rem"
+        class="sub__title"
       >
         <v-icon large class="mr-5">mdi-hammer</v-icon>
         <span>{{ works }}</span>
       </h2>
     </v-layout>
     <v-layout justify-space-around raw wrap class="mb-10">
-      <v-flex data-aos="fade" mb-10 ml-5 mr-5 v-for="item in items" :key="item">
+      <v-flex
+        data-aos="fade"
+        data-aos-delay="200"
+        mb-10
+        ml-5
+        mr-5
+        v-for="item in items"
+        :key="item"
+      >
         <v-hover v-slot:default="{ hover }">
           <v-card class="mx-auto" color="grey lighten-4" width="500">
             <v-img :aspect-ratio="16 / 9" :src="item.image">
               <v-expand-transition>
                 <div
                   v-if="hover"
-                  class="d-flex transition-fast-in-fast-out orange darken-2 v-card--reveal display-3 white--text"
+                  class="d-flex transition-fast-in-fast-out black darken-2 v-card--reveal display-3 white--text"
                   style="height: 100%"
                 >
                   <p class="hoverDescription">{{ item.hoverDescription }}</p>
                 </div>
               </v-expand-transition>
             </v-img>
-            <v-card-text class="pt-6" style="position: relative">
+            <v-card-text style="position: relative">
               <v-btn
                 absolute
                 color="orange"
@@ -87,7 +95,7 @@ Githubのプルリクを活用し、チーム開発を意識してタスク毎�
           github: "https://github.com/Fumi-Mura/my-portfolio",
           url: "リンク停止中",
           title: "My profile",
-          useTech: "Vue + Firebase",
+          useTech: "Vue.js + Firebase",
         },
         {
           id: 3,
@@ -114,14 +122,14 @@ Githubのプルリクを活用し、チーム開発を意識してタスク毎�
   width: 100%;
 }
 .hoverDescription {
-  font-size: 2rem;
+  font-size: 1.2rem;
+  line-height: 2.6rem;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 @media screen and (max-width: 640px) {
   .hoverDescription {
-    font-size: 1.2rem;
-    line-height: 3rem;
+    line-height: 1.3rem;
   }
 }
 </style>

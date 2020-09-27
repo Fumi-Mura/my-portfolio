@@ -1,18 +1,27 @@
 <template>
-  <v-footer dark padless>
+  <v-footer dark padless fixed class="footer">
     <!-- <Nav></Nav> -->
     <v-card class="flex" flat tile>
       <v-card-title class="blue-grey darken-2">
-        <strong class="subheading"> Thank you for watching this site ! </strong>
+        <strong class="subheading">Thank you for watching this site !</strong>
         <v-spacer></v-spacer>
-        <v-btn v-for="icon in icons" :key="icon.id" class="mx-4" dark icon>
+        <v-btn
+          v-for="icon in icons"
+          :key="icon.id"
+          class="mx-4"
+          height="110"
+          dark
+          icon
+        >
           <a :href="icon.href">
             <v-icon large color="grey lighten-5">{{ icon.iconName }}</v-icon>
           </a>
         </v-btn>
       </v-card-title>
       <v-card-text class="py-1 white--text text-center">
-        {{ new Date().getFullYear() }} — <small>Fumiaki Muramatsu</small>
+        <small>
+          Copyright - {{ new Date().getFullYear() }} - Fumiaki Muramatsu
+        </small>
       </v-card-text>
     </v-card>
   </v-footer>

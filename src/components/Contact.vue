@@ -5,11 +5,22 @@
         <h2
           data-aos="fade-up"
           data-aos-anchor-placement="bottom-bottom"
-          style="font-size: 4rem"
+          class="sub__title"
         >
           <v-icon large class="mr-5">mdi-email</v-icon>
           <span>{{ contact }}</span>
         </h2>
+      </v-layout>
+
+      <v-layout>
+        <p>
+          現在転職活動中です。私にできることがあれば何でもさせていただきますので、<br />
+          ご興味持っていただけましたら、ご連絡いただけますと幸いです。<br />
+          希望勤務地: 東京, 大阪, 愛知 / 希望年収: 250万/年 以上 / 学習中言語:
+          Ruby(Rails), Vue.js<br />
+          <a href="https://www.wantedly.com/users/136874830">Wantedly</a>
+          もありますのでそちらもご覧いただけますと幸いです。
+        </p>
       </v-layout>
 
       <v-card class="contact__box">
@@ -60,16 +71,20 @@
         {{ snackBar.message }}
       </v-snackbar>
     </v-container>
+    <Footer />
   </v-app>
 </template>
 
 <script>
 import { functions } from "@/plugins/firebase";
+import Footer from "@/components/Footer.vue";
 
 export default {
   name: "Contact",
   props: {},
-
+  components: {
+    Footer,
+  },
   data() {
     return {
       contact: "contact",
@@ -132,5 +147,6 @@ export default {
 <style scoped lang="scss">
 .contact__box {
   padding: 20px;
+  margin-bottom: 300px;
 }
 </style>

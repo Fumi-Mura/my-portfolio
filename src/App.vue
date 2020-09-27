@@ -2,20 +2,14 @@
   <v-app id="app">
     <v-container class="nav">
       <v-layout>
-        <v-bottom-navigation
-          :value="activeBtn"
-          grow
-          color="teal"
-          app
-          hide-on-scroll
-        >
+        <v-bottom-navigation :value="activeBtn" grow color="teal" app>
           <router-link
             v-for="item in items"
             :key="item.id"
             :to="'/' + item.url"
             tag="a"
           >
-            <v-btn>
+            <v-btn class="">
               <span>{{ item.name }}</span>
               <v-icon>{{ item.iconName }}</v-icon>
             </v-btn>
@@ -90,9 +84,15 @@ export default {
 .nav {
   opacity: 0.7;
   position: fixed;
-  bottom: 20px;
+  bottom: 45px;
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: 100;
+  padding: 100px;
+  line-height: 56px;
+}
+.sub__title {
+  font-size: 3rem;
+  color: #565656;
 }
 </style>

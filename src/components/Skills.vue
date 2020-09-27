@@ -1,21 +1,22 @@
 <template>
-  <v-app class="mt-10 pt-10">
+  <v-app class="mb-10">
     <v-container>
       <v-layout justify-center class="mb-10">
         <h2
           data-aos="fade-up"
           data-aos-anchor-placement="bottom-bottom"
-          style="font-size: 4rem"
+          class="sub__title"
         >
           <v-icon large class="mr-5">mdi-school</v-icon>
           <span>{{ skills }}</span>
         </h2>
       </v-layout>
 
-      <h3 class="subtitle">languages</h3>
+      <h3 class="skils__title">languages</h3>
       <v-layout justify-space-around wrap class="mb-10">
         <v-flex
           data-aos="fade"
+          data-aos-delay="200"
           v-for="language in languages"
           :key="language.id"
           class="center"
@@ -23,16 +24,17 @@
           <font-awesome-icon
             :icon="{ prefix: language.prefix, iconName: language.iconName }"
             class="icon mb-8"
-            style="font-size: 8rem"
+            style="font-size: 5rem"
           /><br />
-          <span class="grey--text text--darken-2">{{ language.name }}</span>
+          <span class="grey--text skills__name">{{ language.name }}</span>
         </v-flex>
       </v-layout>
 
-      <h3 class="subtitle">frameworks</h3>
+      <h3 class="skils__title">frameworks</h3>
       <v-layout justify-space-around wrap class="mb-10">
         <v-flex
           data-aos="fade"
+          data-aos-delay="200"
           v-for="framework in frameworks"
           :key="framework"
           class="center"
@@ -40,16 +42,17 @@
           <font-awesome-icon
             :icon="{ prefix: framework.prefix, iconName: framework.iconName }"
             class="icon mb-8"
-            style="font-size: 8rem"
+            style="font-size: 5rem"
           /><br />
-          <span class="grey--text text--darken-2">{{ framework.name }}</span>
+          <span class="grey--text skills__name">{{ framework.name }}</span>
         </v-flex>
       </v-layout>
 
-      <h3 class="subtitle">others</h3>
+      <h3 class="skils__title">others</h3>
       <v-layout justify-space-around wrap class="mb-10">
         <v-flex
           data-aos="fade"
+          data-aos-delay="200"
           v-for="other in others"
           :key="other"
           class="center"
@@ -57,9 +60,9 @@
           <font-awesome-icon
             :icon="{ prefix: other.prefix, iconName: other.iconName }"
             class="icon mb-8"
-            style="font-size: 8rem"
+            style="font-size: 5rem"
           /><br />
-          <span class="grey--text text--darken-2">{{ other.name }}</span>
+          <span class="grey--text skills__name">{{ other.name }}</span>
         </v-flex>
       </v-layout>
     </v-container>
@@ -139,14 +142,17 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.subtitle {
+.skils__title {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   color: gray;
   margin-bottom: 10px;
 }
 .center {
   display: block;
   text-align: center;
+}
+.skills__name {
+  font-size: 1.2rem;
 }
 </style>
