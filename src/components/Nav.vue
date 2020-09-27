@@ -1,5 +1,5 @@
 <template>
-  <v-app class="mt-10 pt-10">
+  <v-app>
     <v-container class="nav">
       <v-layout>
         <v-bottom-navigation :value="activeBtn" grow color="teal" app>
@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: "Nav",
+  // name: "Nav",
   props: {},
   data() {
     return {
