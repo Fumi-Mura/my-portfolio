@@ -74,9 +74,10 @@ export default {
   z-index: 100;
   padding: 100px;
   line-height: 56px;
+  padding: 0px;
 }
 .sub__title {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #565656;
 }
 </style>

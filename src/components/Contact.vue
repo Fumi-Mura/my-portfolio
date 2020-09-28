@@ -13,7 +13,7 @@
       </v-layout>
 
       <v-layout>
-        <p>
+        <p class="contact__mesasge">
           現在転職活動中です。私にできることがあれば何でもさせていただきますので、<br />
           ご興味持っていただけましたら、ご連絡いただけますと幸いです。<br />
           希望勤務地: 東京, 大阪, 愛知 / 希望年収: 250万/年 以上 / 学習中言語:
@@ -146,5 +146,9 @@ export default {
 .contact__box {
   padding: 20px;
   margin-bottom: 300px;
+}
+.contact__mesasge {
+  font-size: 2rem;
+  margin-bottom: 40px;
 }
 </style>

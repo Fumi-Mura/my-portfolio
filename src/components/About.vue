@@ -106,11 +106,11 @@ export default {
   object-fit: cover;
 }
 .profile__table {
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: #565656;
 }
 .profile__text {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   color: gray;
   margin-bottom: 100px;
 }
