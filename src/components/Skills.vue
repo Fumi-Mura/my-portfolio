@@ -24,7 +24,7 @@
           <font-awesome-icon
             :icon="{ prefix: language.prefix, iconName: language.iconName }"
             class="icon mb-8"
-            style="font-size: 5rem"
+            style="font-size: 8rem"
           /><br />
           <span class="grey--text skills__name">{{ language.name }}</span>
         </v-flex>
@@ -42,7 +42,7 @@
           <font-awesome-icon
             :icon="{ prefix: framework.prefix, iconName: framework.iconName }"
             class="icon mb-8"
-            style="font-size: 5rem"
+            style="font-size: 8rem"
           /><br />
           <span class="grey--text skills__name">{{ framework.name }}</span>
         </v-flex>
@@ -60,7 +60,7 @@
           <font-awesome-icon
             :icon="{ prefix: other.prefix, iconName: other.iconName }"
             class="icon mb-8"
-            style="font-size: 6rem"
+            style="font-size: 8"
           /><br />
           <span class="grey--text skills__name">{{ other.name }}</span>
         </v-flex>

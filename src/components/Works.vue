@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="">
     <v-container>
       <v-layout justify-center class="mb-10">
         <h2

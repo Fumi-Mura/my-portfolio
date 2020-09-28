@@ -53,4 +53,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+.subheading {
+  font-size: 1.6rem;
+}
 </style>
