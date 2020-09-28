@@ -90,10 +90,10 @@ export default {
           id: 2,
           image: require("../assets/my-portfolio-top.jpg"),
           hoverDescription: `現在ご覧いただいているサイトになります。
-実務ではフロントエンド言語の知識も必要と感じ、転職活動と並行して作成しました。
+実務ではフロントエンド言語の知識も必要と感じ、転職活動と並行しSPAの自己紹介サイトを作成しました。
 Githubのプルリクを活用し、チーム開発を意識してタスク毎にブランチをきって進めました。`,
           github: "https://github.com/Fumi-Mura/my-portfolio",
-          url: "リンク停止中",
+          url: "https://my-portfolio-998ce.web.app",
           title: "My profile",
           useTech: "Vue.js + Firebase",
         },
@@ -103,7 +103,7 @@ Githubのプルリクを活用し、チーム開発を意識してタスク毎�
           hoverDescription: `comming soon`,
           github: "https://github.com/Fumi-Mura",
           // url: '',
-          title: "Rails + Vueで新しいサービスを作成予定です。",
+          title: "Rails + Vueで新しいサービスを作成予定です",
           useTech: "Rails + Vue",
         },
       ],
@@ -122,14 +122,14 @@ Githubのプルリクを活用し、チーム開発を意識してタスク毎�
   width: 100%;
 }
 .hoverDescription {
-  font-size: 1.2rem;
-  line-height: 2.6rem;
+  font-size: 2rem;
   white-space: pre-wrap;
   word-wrap: break-word;
 }
 @media screen and (max-width: 640px) {
   .hoverDescription {
-    line-height: 1.3rem;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
   }
 }
 </style>

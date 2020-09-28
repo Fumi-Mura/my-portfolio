@@ -59,8 +59,13 @@ export default {
     transform: translate(-50%, -50%);
     &__typer {
       font-family: "Nunito", sans-serif;
-      font-size: 3rem;
+      font-size: 4rem;
       margin: 0 0 30px 0;
+    }
+    &__job {
+      font-size: 2.5rem;
+      color: #222;
+      font-weight: 300;
     }
     &__line {
       border-bottom: 5px solid #ffaa3b;

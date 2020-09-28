@@ -60,7 +60,7 @@
           <font-awesome-icon
             :icon="{ prefix: other.prefix, iconName: other.iconName }"
             class="icon mb-8"
-            style="font-size: 5rem"
+            style="font-size: 6rem"
           /><br />
           <span class="grey--text skills__name">{{ other.name }}</span>
         </v-flex>
@@ -142,7 +142,7 @@ export default {
 <style scoped lang="scss">
 .skils__title {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: gray;
   margin-bottom: 10px;
 }
@@ -151,6 +151,6 @@ export default {
   text-align: center;
 }
 .skills__name {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 </style>
