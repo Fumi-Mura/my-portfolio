@@ -68,7 +68,7 @@ export default {
 .nav {
   opacity: 0.7;
   position: fixed;
-  bottom: 45px;
+  bottom: 21px;
   left: 50%;
   transform: translate(-50%, 50%);
   z-index: 100;
