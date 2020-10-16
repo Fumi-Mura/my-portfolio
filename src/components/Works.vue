@@ -82,7 +82,7 @@ export default {
 開発・本番環境をDockerで構築し、インフラにAWSを用いてデプロイし、CircleCIでテストを自動化しています。
 全て独学で作成し転職用のPortfolioとして使用しています。Githubに詳細がありますので是非御覧ください。`,
           github: "https://github.com/Fumi-Mura/circle_app",
-          url: "https://www.ones-place.xyz",
+          url: "https://www.ones-place.xyz(サーバー停止中)",
           title: "Ones place",
           useTech: "Rails + AWS + Docker + CircleCI",
         },
